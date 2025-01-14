@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>BinYou</title>
+    <style>
+    body {
+        display: grid;
+        grid-template-rows: 2fr 600px 4fr 2fr;
+        grid-template-columns: 200px 200px 200px;
+        grid-gap: 10px;
+
+        .header {
+        background-color: red;
+        grid-area: 1/1/2/6;
+        text-align: center;
+        color: white;
+        }
+
+    .sidebar {
+        background-color: yellow;
+        grid-area: 2/3/4/1;
+        order: 1;
+        text-align: center;
+        align-content: center;
+        font-weight: bolder;
+        }
+
+    #content {
+        background-color: blue;
+        order: 2;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        }
+    .content-1 {
+        grid-area: 2/3/3/6;
+    }
+    .content-2 {
+        grid-row-start: 3;
+        grid-column-end:auto; 
+    }
+    .content-3 {
+        grid-area: 3/3/4/5;
+    }
+    footer {
+        background-color: red;
+        grid-area: 4/1/4/6;
+        order: 3;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Buenos dias weon</h1>
+
+    </div>
+    <div class="sidebar">
+        <p>Al final pude, si es que soy crack, yo lo se. <br> 
+        Aca dejo negrita porque sino no se ve :) <br> 
+    Y si, si me tome el tiempo de subir esta bobada.</p>
+    
+
+    </div>
+    <div id= "content" class="content-1">
+        <h2>Te amo mi vida, sos el amor de mi vida. <br> ¿Te vas a casar conmigo?
+        </h2>
+    </div>
+    <div id= "content" class="content-2"> 
+        <h2>Si</h2>
+    </div>
+    <div id= "content" class="content-3">
+        <h2>Obvio si</h2>
+    </div>
+
+    <footer>
+        <p>Derechos Reservados por mi :) </p>
+    </footer>
+    
+
+</body>
+
+
+
+
+</html>
